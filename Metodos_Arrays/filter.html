@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  // O Filter faz uma busca pelo array e retorna um valor true ou false;
+  // Nessa atividade formaremos um novo array a partir do primeiro apenas com os números menores do que 20;
+
+  let lista = [9, 11, 26, 31, 17];
+
+  let lista2 = [];
+
+  lista2 = lista.filter((item) => {
+    if(item < 20){
+      return true;
+    }else{
+      return false;
+    }
+  })
+
+  console.log(lista2);
+
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  // O find serve para buscar qualquer tipo de dado dentro de um array.
+  // Procurando e retornando pessoas pelo id 1:
+
+  let pessoas = [
+    {id: 1, nome: "Marcelo", cidade: "Fortaleza"},
+    {id: 2, nome: "Nayara", cidade: "Cariús"},
+    {id: 3, nome: "Bruno", cidade: "Nova Jersey"},
+    {id: 4, nome: "Igor", cidade: "Fortaleza"},
+  ]
+
+  let pessoa = pessoas.find((item) => {
+    if( item.cidade == "Fortaleza" ){
+      return item;
+    }
+  })
+
+  console.log(pessoa);
+
+  // Também existe o findIndex, que no lugar de retornar a posição.
+
+  let posicao = pessoas.findIndex((item) => {
+    if( item.id == 1 ){
+      return item;
+    }
+  })
+
+  console.log(posicao);
+
+</script>
+</html>

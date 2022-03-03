@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  /*O Map percorre um array e implenta uma função em cada item desse array;
+  Por exemplo: nessa atividade pegaremos a lista e criaremos um novo array com os numeros dessa lista multiplicado por 2;*/
+
+  let lista = [2, 4, 6, 8, 10];
+  let lista2 = [];
+
+  lista2 = lista.map((item) => {   //O item equivale a posição que percorre e no final temos que retornar algo.
+    return item * 2;
+  })
+
+  console.log(lista2);
+
+  // Outra forma de fazer:
+
+  // lista.map((item => {
+  //   let res = item * 2;
+  //   lista2.push(res);
+  //   return res;
+  // }))
+
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  // O some percorre o array e passa uma função para fazer uma busca e se pelo menos um dos itens corresponder a busca, ele retorna true;
+  // Por exemplo: Vamos ver se pelo menos UM dos items é menor do que 20, se sim, ele vai retornar true;
+
+  let lista = [9, 11, 26, 31, 17];
+
+  let lista2 = [];
+
+  lista2 = lista.some((item) => {
+    if(item < 20){
+      return true;
+    }else{
+      return false;
+    }
+  })
+
+  console.log(lista2);
+
+</script>
+</html>
