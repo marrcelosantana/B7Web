@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intervalos</title>
+</head>
+
+<body>
+
+  <button onclick="comecar()">Começar</button>
+  <button onclick="parar()">Parar</button>
+
+  <p id="demo"></p>
+
+</body>
+<script>
+
+  let timer;
+
+  function comecar(){
+    timer = setInterval(showTime, 1000); // Estou chamando a função showtime a cada intervalo de 1 segundo.
+  }
+
+  function parar(){
+    clearInterval(timer); //Para com o invervalo criado na função acima.
+  }
+
+  function showTime() {
+    let data = new Date();
+    let hora = data.getHours();
+    let minuto = data.getMinutes();
+    let segundo = data.getSeconds();
+
+    let texto = hora + ":" + minuto + ":" + segundo;
+
+    document.getElementById("demo").innerHTML = texto;
+  }
+
+</script>
+
+</html>

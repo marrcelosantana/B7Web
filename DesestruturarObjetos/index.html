@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desestruturar Objetos</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  // Desestruturar um objeto, é pegar informações especificas dele e transformar em uma variável.
+
+  let pessoa = {
+    nome: "Marcelo",
+    sobrenome: "Santana Marques",
+    idade: 24,
+    social: {
+      instagram: "marrcelosantana",
+      facebook: "maarcelosantana"
+    },
+    nomeCompleto: function(){
+      return `${this.nome} ${this.sobrenome}`;
+    }
+  }
+
+  let { nome, sobrenome, idade } = pessoa; //Aqui ocorre a desestruturação: peguei as variaveis nome, sobrenome e idade e lancei em uma variável externa.
+
+  let { facebook } = pessoa.social; //Desestruturando um objeto dentro de outro objeto.
+  
+  let { social: { instagram } } = pessoa;//Outra forma de pegar um objeto dentro de outro.
+
+  console.log(nome, sobrenome, idade);
+  console.log(`Facebook: ${facebook} e Instagram ${instagram}`);
+
+</script>
+</html>

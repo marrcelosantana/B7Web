@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desestruturando Arrays</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  let info = ["Marcelo", "Santana", 24, "@marrcelosantana"];
+
+  let [ nome, sobrenome, idade, instagram ] = info;
+  
+  console.log(nome, sobrenome, idade, instagram);
+
+  /* Se quiser pegar apenas alguns dados do array e não todos (caso eles estejam no meio ou no final do array) é só fazer: 
+    let [ nome, , , instagram ] = info; */
+
+</script>
+</html>
