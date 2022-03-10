@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread Operator</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+
+/* Geralmente usamos o Spread Operator quando queremos complementar alguma coisa. */
+
+  let numeros = [1, 2, 3, 4, 5];
+  let outros  = [...numeros, 6, 7, 8, 9, 10];
+
+  console.log(outros);
+
+  //Exemplo utilizando objetos:
+
+  let info = { 
+    nome: "Marcelo",
+    sobrenome: "Santana",
+    idade: 99
+  }
+
+  let novaInfo = { //Complementamos o novo objeto com os dados do objeto info.
+    ...info,
+    cidade: "Fortaleza",
+    estado: "Ceará"
+  }
+
+  console.log(novaInfo);
+
+  //Exemplo utilizando funções: ---- MAIS UTILIZADO ----
+
+  function addInfo(info){
+    let novaInfo = {
+      ...info,
+      status: "ok",
+      token: "GHD8467FNJ",
+      login: "active"
+    }
+    return novaInfo;
+  }
+
+  let informacao = {
+    nome: "Marcelo",
+    sobrenome: "Marques",
+    idade: 98
+  }
+  
+  console.log(addInfo(informacao));
+
+</script>
+</html>

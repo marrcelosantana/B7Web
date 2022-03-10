@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Keys, Values e Entries</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+
+/* 
+  OBJECT.KEYS = Faz um array retornando as chaves (posições) de um determinado objeto.
+  OBJECT.VALUES = Faz um array retornando os valores de um determinado objeto.
+  OBJECT.ENTRIES = Faz um array para cada item, contendo a posição e o valor de cada um.
+*/
+
+let ingredientes = ["Leite", "Ovo", "Macarrão"];
+
+console.log(Object.keys(ingredientes));
+console.log(Object.values(ingredientes));
+console.log(Object.entries(ingredientes));
+
+let pessoa = { 
+  nome: "Marcelo",
+  sobrenome: "Santana",
+  idade: 10
+}
+
+console.log(Object.keys(pessoa));
+console.log(Object.values(pessoa));
+console.log(Object.entries(pessoa));
+
+
+</script>
+</html>

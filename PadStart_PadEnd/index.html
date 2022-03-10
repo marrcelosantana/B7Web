@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PadStart e PadEnd</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+
+/*
+  Esses dois métodos servem para dizer quantos caracteres tem uma string, e se ele não tiver esse número, o método preenche com algo (passado por parâmetro);
+  PAD START = Preenche no começo da string;
+  PAD END = Preenche no final da string;
+*/
+
+  let numero = '5';
+
+  console.log(numero.padStart(6, '*'))
+  console.log(numero.padEnd(6, '*'))
+
+  //Exercicio: Omitindo números de um cartão de crédito:
+
+  let card = '456745129090';
+
+  let last4digits = card.slice(-4); //Pegando os últimos 4 digitos do cartão.
+
+  let hiddenCard = last4digits.padStart(12, "*"); //Preechendo o restante com o asterisco.
+
+  console.log(hiddenCard);
+
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Includes e Repeat</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  // -> INCLUDES <-
+
+  //O includes serve como um método de busca tanto em arrays, como em strings;
+
+  let ingredientes = ["Ovo", "Manteiga", "Leite", "Farinha"];
+
+  function encontrar(array, item){
+    if(array.includes(item) === true){
+      console.log("ITEM ENCONTRADO!")
+    }else{
+      console.log("ITEM NÃO ENCONTRADO!")
+    }
+  }
+
+  let ingrediente = "Leite";
+
+  encontrar(ingredientes, ingrediente);
+
+  // Utilizando INCLUDES em String:
+
+  let string =  "Marcelo";
+
+  function encontrarLetra(string, letra){
+    if(string.includes(letra) === true){
+      console.log("LETRA ENCONTRADA!")
+    }else{
+      console.log("LETRA NÃO ENCONTRADA!")
+    }
+  }
+
+  let letra = 'b';
+
+  encontrarLetra(string, letra);
+
+
+  // -> REPEAT <-
+
+  /* É utilizado para repetir dados, passando como parâmetro quantas vezes você quer que tal dado seja repetido. */
+
+  let nome = 'Marcelo ';
+
+  function repetir(nome){
+    console.log(nome.repeat(5));
+  }
+
+  repetir(nome);
+ 
+</script>
+</html>
