@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON.Parse e JSON.Stringify</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  // O JSON.parse() transforma a resposta da requisição (string) em um JSON.
+  let pessoa = '{"nome": "Marcelo", "idade": 90}';
+  console.log(JSON.parse(pessoa));
+
+  // O JSON.stringify() faz o contrário, transforma um JSON em string.
+  let people = {nome: "Igor", idade: 80};
+  console.log(JSON.stringify(people));
+
+</script>
+</html>
