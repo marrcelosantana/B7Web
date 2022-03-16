@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload de Arquivos</title>
+</head>
+<body>
+  <input type="file" id="arquivo">
+  <button onclick="enviarArquivo()">Enviar</button>
+</body>
+<script>
+
+  async function enviarArquivo() {
+    let arquivo = document.getElementById("arquivo").files[0];
+
+    let body = new FormData();
+    body.append('title', 'TÍTULO DO ARQUIVO');
+    body.append('arquivo', arquivo);
+
+    let req = await fetch('https://www.meusite.com.br/upload', { //URL que não existe, apenas para exemplo.
+      method: 'POST',
+      body: body,
+      headers : {
+        'Content-Type': 'multipart/form-data'
+      }
+    });
+  }
+
+</script>
+</html>
