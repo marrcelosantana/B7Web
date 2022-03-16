@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(252, 207, 215);
+}
+input[type = text]{
+    padding: 10px;
+    font-size: 14px;
+}
+
+.azul{
+    background-color: rgb(13, 217, 231);
+    color: white;
+}
+
+.vermelho{
+    background-color: rgb(253, 33, 33);
+    color: white;
+}
+
+.verde{
+    background-color: rgb(54, 240, 54);
+    color: black;
+}
